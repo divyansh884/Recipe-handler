@@ -14,6 +14,7 @@ useEffect(() => {
     setrecipes(JSON.parse(conxt));
   }
 },[]);
+
 useEffect(() => {
   localStorage.setItem(LOCAL_STORAGE_KEY,JSON.stringify(recipes));
 }, [recipes]);
